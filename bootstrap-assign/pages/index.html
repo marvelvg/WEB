@@ -15,24 +15,43 @@
 
 </head>
 <style>
-    body{
-        margin:0 ;
+    body {
+        margin: 0;
         display: flex;
         flex-direction: column;
+        background-color: rgb(0, 0, 0);
 
     }
+
     #box:hover {
         background-color: aliceblue;
         border-radius: 10px;
     }
 
     .bg-color {
-        background-color: rgb(58, 32, 1);
+        background-color: rgba(53, 33, 0, 0.366);
     }
-    
-    .content-footer:hover{
+
+    .content-footer:hover {
         scale: 1.01;
     }
+
+    .card-img-top {
+    height: 200px;       /* atau berapa aja yg lu mau */
+    object-fit: cover;
+}
+
+.card:hover{
+    scale: 1.05;
+}
+
+.card {
+    box-shadow: 0 0 10px cornsilk;
+}
+
+.bg-button{
+    background-color: rgb(65, 42, 3);
+}
 </style>
 
 <body>
@@ -44,7 +63,7 @@
 
     <!-- HAMBURGER MENU-->
 
-    <nav class="navbar navbar-expand-sm bg-color navbar-dark sticky-top py-3">
+    <nav class="navbar navbar-expand-sm bg-nav navbar-dark sticky-top py-3">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -89,7 +108,7 @@
                 font-style: normal;
                 margin-bottom: 20px;
                 text-align: center;
-                ">
+                " class="text-white">
         Kedai Kopi Nusantara
     </h1>
 
@@ -125,85 +144,227 @@
         </button>
     </div>
 
-    <div class="container-fluid mt-20">
+    <div class="container-fluid mt-5">
 
-        <div class="container">
-            <div class="row">
-                <div id="box" class="container col-md-3 mt-3">
-                    <h2>Card Image</h2>
-                    <p>Image at the top (card-img-top):</p>
-                    <div class="card">
-                        <img class="card-img-top" src="../asset/biji.webp" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and
-                                engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="box" class="container col-md-3 mt-3">
-                    <h2>Card Image</h2>
-                    <p>Image at the top (card-img-top):</p>
-                    <div class="card">
-                        <img class="card-img-top" src="../asset/biji.webp" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and
-                                engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="box" class="container col-md-3 mt-3">
-                    <h2>Card Image</h2>
-                    <p>Image at the top (card-img-top):</p>
-                    <div class="card">
-                        <img class="card-img-top" src="../asset/biji.webp" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and
-                                engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="box" class="mb-5 container col-md-3 mt-3">
-                    <h2>Card Image</h2>
-                    <p>Image at the top (card-img-top):</p>
-                    <div class="card">
-                        <img class="card-img-top" src="../asset/biji.webp" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and
-                                engineer</p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
 
+            <!-- Explore -->
+            <div class="box col-md-3 mt-3">
+
+                <h2 class="text-white">Explore</h2>
+                <p class="text-white">Kenali perjalanan kopi kami</p>
+
+                <div class="card">
+                    <img class="card-img-top object-fit-cover"
+                        src="../asset/pabrik-kopi.jpg"
+                        alt="Pabrik Kopi"
+                        style="width:100%">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Pabrik Kopi Nusantara
+                        </h4>
+
+                        <p class="card-text">
+                            Jelajahi bagaimana biji kopi pilihan Nusantara
+                            diproses hingga siap disajikan menjadi secangkir
+                            kopi yang sangat amat berkualitas. 
+                        </p>
+
+                        <a href="#" class="bg-button btn btn-primary">
+                            Jelajahi
+                        </a>
+                    </div>
+                </div>
 
             </div>
+
+
+            <!-- Environment -->
+            <div class="box col-md-3 mt-3">
+
+                <h2 class="text-white">Environment</h2>
+                <p class="text-white">Menjaga kualitas dan lingkungan</p>
+
+                <div class="card">
+                    <img class="card-img-top object-fit-cover"
+                        src="../asset/cara-pengolahan-kopi.jpg"
+                        alt="Pengolahan Kopi"
+                        style="width:100%">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Dari Biji hingga Cangkir
+                        </h4>
+
+                        <p class="card-text">
+                            Kami memperhatikan setiap proses pengolahan kopi,
+                            mulai dari pemilihan biji, pengolahan, hingga
+                            proses roasting kopi berkualitas.
+                        </p>
+
+                        <a href="#" class="bg-button btn btn-primary">
+                            Pelajari
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Price -->
+            <div class="box col-md-3 mt-3">
+
+                <h2 class="text-white">Price</h2>
+                <p class="text-white">Kopi berkualitas untuk semua</p>
+
+                <div class="card">
+                    <img class="card-img-top object-fit-cover"
+                        src="../asset/harga-kopi.webp"
+                        alt="Harga Kopi"
+                        style="width:100%">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Harga yang Bersahabat
+                        </h4>
+
+                        <p class="card-text">
+                            Nikmati berbagai pilihan kopi Nusantara
+                            dengan harga yang sesuai untuk menemani
+                            aktivitas sehari-hari untuk memastikan kopi berkualitas.
+                        </p>
+
+                        <a href="#" class="bg-button btn btn-primary">
+                            Lihat Menu
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Business -->
+            <div class="box col-md-3 mt-3 mb-5">
+
+                <h2 class="text-white">Business</h2>
+                <p class="text-white">Mendukung ekosistem kopi</p>
+
+                <div class="card">
+                    <img class="card-img-top"
+                        src="../asset/biji.webp"
+                        alt="Biji Kopi"
+                        style="width:100%">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Mendukung Petani Lokal
+                        </h4>
+
+                        <p class="card-text">
+                            Kami bekerja sama dengan petani kopi lokal
+                            untuk menghadirkan dan menjaminkan sebuah biji kopi berkualitas.
+                        </p>
+
+                        <a href="#" class=" bg-button btn btn-primary">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 
-    </div>
+</div>
 
-<footer class="bg-color flex-col py-4">
-   <div class=" d-flex flex-column align-items-center container mt-3">
-    <div style="display: flex;" class="whatsapp m-1">
-            <a class="content-footer" href="https://wa.me/6289534401889"><img style="width: 20px; height: 20px;" src="../asset/whatsapp-icon.webp"></a>
-            <p class="content-footer text-white mb-0 ms-2">Whatsapp</p>
-    </div>
+<footer class="bg-footer py-5">
+    <div class="container">
 
-    <div class="d-flex facebook m-1 ">
-        <a class="content-footer" href="#"><img style="width: 20px; height: 20px;" src="../asset/facebook-icon.webp"></a>
-        <p class="content-footer text-white mb-0 ms-2"> Facebook </p>
+        <div class="row">
+
+            <div class="col-md-2 mb-4">
+                <h5 class="text-white">Perusahaan</h5>
+
+                <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Tentang</a>
+                <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Produk</a>
+                <a href="#" class=" content-footer text-white d-block text-decoration-none">Blog</a>
+            </div>
+
+            <div class="col-md-2 mb-4">
+                <h5 class="text-white">Gabung</h5>
+
+                <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Mitra</a>
+                <a href="#" class=" content-footer text-white d-block text-decoration-none">Usaha</a>
+            </div>
+
+            <div class="col-md-2 mb-4">
+                <h5 class="text-white">Karir</h5>
+
+                <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Pelajar</a>
+                <a href="#" class=" content-footer text-white d-block text-decoration-none">Professional</a>
+            </div>
+
+            <div class="col-md-2 mb-4">
+                <h5 class="text-white content-footer">Hubungi kami</h5>
+
+                <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Bantuan</a>
+                <a href="#" class=" content-footer text-white d-block text-decoration-none">Lokasi Kami</a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <h5 class="text-white">Connect With Us</h5>
+
+                <div class="d-flex gap-3 mt-4">
+
+                    <a class="content-footer" href="https://wa.me/6289534401889">
+                        <img src="../asset/whatsapp-icon.webp"
+                            width="25"
+                            height="25">
+                    </a>
+
+                    <a class="content-footer" href="#">
+                        <img src="../asset/facebook-icon.webp"
+                            width="25"
+                            height="25">
+                    </a>
+
+                    <a class="content-footer" href="#">
+                        <img src="../asset/Instagram-icon.png"
+                            width="25"
+                            height="25">
+                    </a>
+
+                    <a class="content-footer" href="#">
+                        <img src="../asset/logo-youtube.png"
+                            width="30"
+                            height="30">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr class="border-light opacity-50">
+
+
+        <div class="mt-4">
+
+            <p class="text-white mb-0">
+                © 1979 Kedai Kopi Nusantara | Kedai Kopi Nusantara adalah merek milik PT Kedai Kopi Nusantara Tbk. Terdaftar pada Direktorat Jendral Kekayaan Intelektual
+                Republik Indonesia.
+            </p>
+
+        </div>
+
     </div>
-        <p class=" text-white text-center mt-1">
-            It's like having the entire neighborhood's kitchen in your pocket </div>
 </footer>
-
 </body>
 
 </html>
