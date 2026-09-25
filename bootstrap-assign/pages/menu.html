@@ -62,23 +62,73 @@
             margin-bottom: 20px;
         }
 
-        .image-cover{
-            width: 416px;
-            height: 250px;
+        .image-cover {
+            margin-top: 10px;
+            position: relative;
+            left: 30px;
+            width: 300px;
+            height: 200px;
+
+            border-radius: 20px;
             object-fit: cover;
         }
 
-        .box-style:hover{
+        .box-style:hover {
             background-color: aliceblue;
             border-radius: 2px;
             scale: 1.02;
         }
 
-        .box-style h5,p:hover{
-          color: black;
+        .box-style h5,
+        p:hover {
+            color: black;
+        }
+        @media (max-width: 2000px) and (min-width: 1300px){
+              
+            .image-cover {
+                position: relative;
+                right: 50px;
+                width: 350px;
+                height: 250px;
+            }
+        
         }
 
+          @media (max-width: 1300px) and (min-width: 1200px){
+              
+            .image-cover {
+                position: relative;
+                width: 320px;
+                height: 250px;
+            }
+        
+        }
 
+        @media (max-width: 1200px) and (min-width: 800px){
+            .image-cover {
+                position: relative;
+                right: 50px;
+                width: 200px;
+                height: 150px;
+            }
+        }
+        @media(min-width: 570px) and (max-width: 770px){
+             .image-cover {
+                position: relative;
+                left: 30px;
+                width: 200px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .image-cover {
+                position: relative;
+                left: 30px;
+                width: 350px;
+                height: 200px;
+            }
+        }
     </style>
 
 </head>
@@ -123,7 +173,7 @@
         </div>
     </nav>
 
-       <h1 class="text-style text-white text-center
+    <h1 class="text-style text-white text-center
     "> Andalan Kami</h1>
 
     <div class="container my-5">
@@ -131,8 +181,7 @@
 
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top"
-                    src="../asset/kopisusu.jpg" alt="Kopi Susu Gula Aren">
+                    <img class="image-cover card-img-top" src="../asset/kopisusu.jpg" alt="Kopi Susu Gula Aren">
                     <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-white">Kopi Susu Gula Aren</h2>
                         <p class="card-text">Perpaduan espresso, susu segar, dan gula aren asli yang manis legit.</p>
@@ -143,8 +192,7 @@
 
             <div class=" col-12 col-sm-6 col-lg-4">
                 <div class=" box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top"
-                    src="../asset/americano.jpg" alt="Americano">
+                    <img class="image-cover card-img-top" src="../asset/americano.jpg" alt="Americano">
                     <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-white">Americano</h2>
                         <p class="card-text">Espresso murni dicampur air panas, cocok buat penikmat kopi hitam.</p>
@@ -155,10 +203,9 @@
 
             <div class=" col-12 col-sm-6 col-lg-4">
                 <div class="box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top"
-                    src="../asset/kopi-cantik.jpg" alt="Cappuccino">
+                    <img class="image-cover card-img-top" src="../asset/kopi-cantik.jpg" alt="Cappuccino">
                     <div class="card-body d-flex flex-column">
-                        <h2 class="card-title text-white">Cappuccino</h2> 
+                        <h2 class="card-title text-white">Cappuccino</h2>
                         <p class="card-text">Espresso dengan foam susu lembut, ditaburi bubuk kayu manis.</p>
                         <p class="card-text mt-auto fw-bold">Rp 25.000</p>
                     </div>
@@ -167,8 +214,7 @@
 
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top"
-                    src="../asset/matcha-latte.jpg" alt="Matcha Latte">
+                    <img class="image-cover card-img-top" src="../asset/matcha-latte.jpg" alt="Matcha Latte">
                     <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-white">Matcha Latte</h2>
                         <p class="card-text">Bubuk matcha premium dipadukan susu creamy, seger dan gak eneg.</p>
@@ -179,8 +225,7 @@
 
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top" 
-                    src="../asset/croissant.jpg" alt="Croissant Coklat">
+                    <img class="image-cover card-img-top" src="../asset/croissant.jpg" alt="Croissant Coklat">
                     <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-white">Croissant Coklat</h2>
                         <p class="card-text">Croissant renyah berlapis dengan filling coklat lumer di dalamnya.</p>
@@ -191,8 +236,8 @@
 
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="box-style card h-100 bg-color text-white border-0">
-                    <img class="image-cover card-img-top"
-                    src="../asset/kentang-goreng.jpg" alt="Kentang Goreng">
+                    <img class="image-cover card-img-top" src="../asset/kentang-goreng.jpg"
+                        alt="Kentang Goreng">
                     <div class="card-body d-flex flex-column">
                         <h2 class="card-title text-white">Kentang Goreng</h2>
                         <p class="card-text">Kentang goreng renyah disajikan dengan saus sambal & mayo.</p>
