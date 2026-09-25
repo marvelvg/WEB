@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
         rel="stylesheet">
-
 
     <style>
         body {
@@ -23,7 +26,7 @@
 
         }
 
-        #box:hover {
+        .box:hover {
             background-color: aliceblue;
             border-radius: 10px;
         }
@@ -65,119 +68,397 @@
             margin-bottom: 20px;
         }
 
-        .image-rounded{
+        .image-rounded {
             width: 400px;
             height: 200px;
             border-radius: 20px;
+        }
+
+        .object-fit-cover {
+            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top py-3">
         <div class="container-fluid">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <ul class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="index.html">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="contact.html">Contact</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="menu.html">Menu</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link active" href="gallery.html">Gallery</a>
                 </li>
+
                 <li class="nav-item dropdown">
-                    <a class="text-style-nav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <a class="text-style-nav nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">
                         About Us
                     </a>
+
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="#">Story</a></li>
-                        <li><a class="dropdown-item" href="#">Team</a></li>
+                        <li>
+                            <a class="dropdown-item" href="about.html#about-section">About</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="about.html#milestone-section">Story</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="about.html#team-section">Team</a>
+                        </li>
                     </ul>
                 </li>
+
             </ul>
         </div>
     </nav>
 
+
     <div class="container my-4 mb-2">
-        <video video-custom autoplay muted loop playsinline tabindex="-1" oncontextmenu="return false;"
-            disablePictureInPicture controlsList="nodownload noplaybackrate nofullscreen"
+
+        <video autoplay muted loop playsinline tabindex="-1"
+            oncontextmenu="return false;"
             class="d-block w-100 rounded-3">
 
-
             <source src="../asset/kopipilihan.webm" type="video/webm">
+
             Browser Anda tidak mendukung pemutaran video.
+
         </video>
+
     </div>
 
+
+    <div class="container my-5">
+
+        <h1 class="text-style text-white">Galeri Kami</h1>
+
+        <div class="row g-4 justify-content-center">
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/harga-kopi.webp"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Harga Kopi">
+
+                    <h2 class="text-white text-style-nav">
+                        Pilihan Harga Kopi
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Nikmati berbagai pilihan kopi dengan harga yang bersahabat untuk semua pelanggan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/kesukaanmama.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Kopi Kesukaan">
+
+                    <h2 class="text-white text-style-nav">
+                        Kopi Kesukaan
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Racikan kopi favorit dengan cita rasa khas yang cocok dinikmati kapan saja.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/cara-pengolahan-kopi.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Pengolahan Kopi">
+
+                    <h2 class="text-white text-style-nav">
+                        Proses Pengolahan
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Mengenal proses pengolahan biji kopi hingga siap disajikan dalam secangkir kopi.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/pabrik-kopi.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Pabrik Kopi">
+
+                    <h2 class="text-white text-style-nav">
+                        Dari Pabrik
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Perjalanan biji kopi dimulai dari proses produksi sebelum sampai ke kedai kami.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/kopi.webp"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Secangkir Kopi">
+
+                    <h2 class="text-white text-style-nav">
+                        Secangkir Kopi
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Secangkir kopi hangat yang siap menemani waktu santai dan aktivitas harianmu.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/kopi-cantik.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Kopi Spesial">
+
+                    <h2 class="text-white text-style-nav">
+                        Kopi Spesial
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Tampilan cantik dengan rasa yang nikmat, dibuat untuk memberikan pengalaman terbaik.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/contact-us.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Hubungi Kami">
+
+                    <h2 class="text-white text-style-nav">
+                        Hubungi Kami
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Punya pertanyaan atau ingin berkunjung? Jangan ragu untuk menghubungi kami.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-sm-6">
+
+                <div class="box card bg-color border-0 p-3 h-100">
+
+                    <img src="../asset/kopi-lagi.jpg"
+                        class="image-rounded w-100 object-fit-cover mb-3"
+                        alt="Menikmati Kopi">
+
+                    <h2 class="text-white text-style-nav">
+                        Waktu Ngopi
+                    </h2>
+
+                    <p class="text-white-50 mb-0">
+                        Karena setiap hari terasa lebih menyenangkan dengan kopi dan suasana yang nyaman.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
     <footer class="bg-footer py-5">
+
         <div class="container">
 
             <div class="row">
 
-                <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Perusahaan</h5>
-
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Tentang</a>
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Produk</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Blog</a>
-                </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Gabung</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Mitra</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Usaha</a>
+                    <h2 class="text-white">
+                        Perusahaan
+                    </h2>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Tentang
+                    </a>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Produk
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Blog
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Karir</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Pelajar</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Professional</a>
+                    <h2 class="text-white">
+                        Gabung
+                    </h2>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Mitra
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Usaha
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Hubungi kami</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Bantuan</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Lokasi Kami</a>
+                    <h2 class="text-white">
+                        Karir
+                    </h2>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Pelajar
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Professional
+                    </a>
+
                 </div>
+
+
+                <div class="col-md-2 mb-4">
+
+                    <h2 class="text-white">
+                        Hubungi kami
+                    </h2>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Bantuan
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Lokasi Kami
+                    </a>
+
+                </div>
+
 
                 <div class="col-md-4 mb-4">
 
-                    <h5 class="text-white">Connect With Us</h5>
+                    <h2 class="text-white">
+                        Connect With Us
+                    </h2>
 
                     <div class="d-flex gap-3 mt-4">
 
                         <a class="content-footer" href="https://wa.me/6289534401889">
-                            <img src="../asset/whatsapp-icon.webp" width="25" height="25">
+
+                            <img src="../asset/whatsapp-icon.webp"
+                                width="25"
+                                height="25"
+                                alt="WhatsApp">
+
                         </a>
 
-                        <a class="content-footer" href="#">
-                            <img src="../asset/facebook-icon.webp" width="25" height="25">
-                        </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/Instagram-icon.png" width="25" height="25">
+
+                            <img src="../asset/facebook-icon.webp"
+                                width="25"
+                                height="25"
+                                alt="Facebook">
+
                         </a>
 
+
                         <a class="content-footer" href="#">
-                            <img src="../asset/logo-youtube.png" width="30" height="30">
+
+                            <img src="../asset/Instagram-icon.png"
+                                width="25"
+                                height="25"
+                                alt="Instagram">
+
+                        </a>
+
+
+                        <a class="content-footer" href="#">
+
+                            <img src="../asset/logo-youtube.png"
+                                width="30"
+                                height="30"
+                                alt="YouTube">
+
                         </a>
 
                     </div>
@@ -201,7 +482,9 @@
             </div>
 
         </div>
+
     </footer>
+
 </body>
 
 </html>

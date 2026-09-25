@@ -12,8 +12,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
         rel="stylesheet">
-
-</head>
 <style>
     body {
         margin: 0;
@@ -52,7 +50,6 @@
 
     .card-img-top {
         height: 200px;
-        /* atau berapa aja yg lu mau */
         object-fit: cover;
     }
 
@@ -83,7 +80,13 @@
         font-style: normal;
         margin-bottom: 20px;
     }
+
+    .box-config {
+        max-height: 494px;
+    }
 </style>
+</head>
+
 
 <body>
     <!-- HOME  -->
@@ -123,9 +126,9 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="#">Story</a></li>
-                        <li><a class="dropdown-item" href="#">Team</a></li>
+                        <li><a class="dropdown-item" href="about.html#about-section">About</a></li>
+                        <li><a class="dropdown-item" href="about.html#milestone-section">Story</a></li>
+                        <li><a class="dropdown-item" href="about.html#team-section">Team</a></li>
                     </ul>
 
                 </li>
@@ -182,27 +185,26 @@
             <div class="row">
 
                 <!-- Explore -->
-                <div class="box col-md-3 mt-3">
+                <div class="box-config col-md-3 mt-3 d-flex flex-column">
 
                     <h2 class="text-white text-style">Explore</h2>
                     <p class="text-white">Kenali perjalanan kopi kami</p>
 
-                    <div class="card">
-                        <img class="card-img-top object-fit-cover" src="../asset/pabrik-kopi.jpg" alt="Pabrik Kopi"
-                            style="width:100%">
+                    <div class="card h-100 d-flex flex-column">
+                        <img class="card-img-top object-fit-cover" src="../asset/pabrik-kopi.jpg" alt="Pabrik Kopi">
 
-                        <div class="card-body">
-                            <h4 class="card-title">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">
                                 Pabrik Kopi Nusantara
-                            </h4>
+                            </h3>
 
-                            <p class="card-text">
+                            <p class="card-text flex-grow-1">
                                 Jelajahi bagaimana biji kopi pilihan Nusantara
                                 diproses hingga siap disajikan menjadi secangkir
                                 kopi yang sangat amat berkualitas.
                             </p>
 
-                            <a href="#" class="bg-button btn btn-primary">
+                            <a href="#" class="bg-button btn btn-primary mt-auto">
                                 Jelajahi
                             </a>
                         </div>
@@ -212,27 +214,27 @@
 
 
                 <!-- Environment -->
-                <div class="box col-md-3 mt-3">
+                <div class="box-config col-md-3 mt-3 d-flex flex-column">
 
                     <h2 class="text-white text-style">Environment</h2>
                     <p class="text-white">Menjaga kualitas dan lingkungan</p>
 
-                    <div class="card">
+                    <div class="card h-100 d-flex flex-column">
                         <img class="card-img-top object-fit-cover" src="../asset/cara-pengolahan-kopi.jpg"
-                            alt="Pengolahan Kopi" style="width:100%">
+                            alt="Pengolahan Kopi">
 
-                        <div class="card-body">
-                            <h4 class="card-title">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">
                                 Dari Biji hingga Cangkir
-                            </h4>
+                            </h3>
 
-                            <p class="card-text">
-                                Kami memperhatikan setiap proses pengolahan kopi,
-                                mulai dari pemilihan biji, pengolahan, hingga
+                            <p class="card-text flex-grow-1">
+                                Kami memperhatikan proses pengolahan kopi,
+                                dari pemilihan biji, pengolahan, hingga
                                 proses roasting kopi berkualitas.
                             </p>
 
-                            <a href="#" class="bg-button btn btn-primary">
+                            <a href="#" class="bg-button btn btn-primary mt-auto">
                                 Pelajari
                             </a>
                         </div>
@@ -242,27 +244,51 @@
 
 
                 <!-- Price -->
-                <div class="box col-md-3 mt-3">
+                <div class="box-config col-md-3 mt-3 d-flex flex-column">
 
                     <h2 class="text-white text-style">Price</h2>
                     <p class="text-white">Kopi berkualitas untuk semua</p>
 
-                    <div class="card">
-                        <img class="card-img-top object-fit-cover" src="../asset/harga-kopi.webp" alt="Harga Kopi"
-                            style="width:100%">
+                    <div class="card h-100 d-flex flex-column">
+                        <img class="card-img-top object-fit-cover" src="../asset/harga-kopi.webp" alt="Harga Kopi">
 
-                        <div class="card-body">
-                            <h4 class="card-title">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">
                                 Harga yang Bersahabat
-                            </h4>
+                            </h3>
 
-                            <p class="card-text">
+                            <p class="card-text flex-grow-1">
                                 Nikmati berbagai pilihan kopi Nusantara
                                 dengan harga yang sesuai untuk menemani
                                 aktivitas sehari-hari untuk memastikan kopi berkualitas.
                             </p>
 
-                            <a href="#" class="bg-button btn btn-primary">
+                            <a href="#" class="bg-button btn btn-primary mt-auto">
+                                Lihat Menu
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box-config col-md-3 mt-3 d-flex flex-column mb-5">
+
+                    <h2 class="text-white text-style">Bussiness</h2>
+                    <p class="text-white">Mendukung petani lokal</p>
+
+                    <div class="card h-100 d-flex flex-column">
+                        <img class="card-img-top object-fit-cover" src="../asset/harga-kopi.webp" alt="Harga Kopi">
+
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">
+                                Mendukung lokal
+                            </h3>
+
+                            <p class="card-text flex-grow-1">
+                                Kami bekerja sama dengan petani kopi lokal
+                                untuk menghadirkan dan menjaminkan sebuah biji kopi berkualitas.
+                            </p>
+
+                            <a href="#" class="bg-button btn btn-primary mt-auto">
                                 Lihat Menu
                             </a>
                         </div>
@@ -271,45 +297,20 @@
                 </div>
 
 
-                <!-- Business -->
-                <div class="box col-md-3 mt-3 mb-5">
 
-                    <h2 class="text-white text-style">Business</h2>
-                    <p class="text-white">Mendukung ekosistem kopi</p>
-
-                    <div class="card">
-                        <img class="card-img-top" src="../asset/biji.webp" alt="Biji Kopi" style="width:100%">
-
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                Mendukung Petani Lokal
-                            </h4>
-
-                            <p class="card-text">
-                                Kami bekerja sama dengan petani kopi lokal
-                                untuk menghadirkan dan menjaminkan sebuah biji kopi berkualitas.
-                            </p>
-
-                            <a href="#" class=" bg-button btn btn-primary">
-                                Selengkapnya
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
 
             </div>
         </div>
 
     </div>
 
-    <footer class="bg-footer py-5">
+    <footer class="bg-footer py-5 mt-5">
         <div class="container">
 
             <div class="row">
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white content-footer ">Perusahaan</h5>
+                    <h4 class="text-white content-footer ">Perusahaan</h4>
 
                     <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Tentang</a>
                     <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Produk</a>
@@ -317,21 +318,21 @@
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="content-footer text-white">Gabung</h5>
+                    <h4 class="content-footer text-white">Gabung</h4>
 
                     <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Mitra</a>
                     <a href="#" class=" content-footer text-white d-block text-decoration-none">Usaha</a>
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white content-footer ">Karir</h5>
+                    <h4 class="text-white content-footer ">Karir</h4>
 
                     <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Pelajar</a>
                     <a href="#" class=" content-footer text-white d-block text-decoration-none">Professional</a>
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white content-footer">Hubungi kami</h5>
+                    <h4 class="text-white content-footer">Hubungi kami</h4>
 
                     <a href="#" class=" content-footer text-white d-block mb-3 text-decoration-none">Bantuan</a>
                     <a href="#" class=" content-footer text-white d-block text-decoration-none">Lokasi Kami</a>
@@ -339,24 +340,24 @@
 
                 <div class="col-md-4 mb-4">
 
-                    <h5 class="text-white content-footer">Connect With Us</h5>
+                    <h4 class="text-white content-footer">Connect With Us</h4>
 
                     <div class="d-flex gap-3 mt-4">
 
                         <a class="content-footer" href="https://wa.me/6289534401889">
-                            <img src="../asset/whatsapp-icon.webp" width="25" height="25">
+                            <img src="../asset/whatsapp-icon.webp" width="25" height="25" alt="WhatsApp">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/facebook-icon.webp" width="25" height="25">
+                            <img src="../asset/facebook-icon.webp" width="25" height="25" alt="Facebook">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/Instagram-icon.png" width="25" height="25">
+                            <img src="../asset/Instagram-icon.png" width="25" height="25" alt="Instagram">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/logo-youtube.png" width="30" height="30">
+                            <img src="../asset/logo-youtube.png" width="30" height="30" alt="YouTube">
                         </a>
 
                     </div>

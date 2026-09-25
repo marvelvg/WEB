@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
         rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -70,131 +74,379 @@
             font-style: normal;
             margin-bottom: 20px;
         }
+
+        .box-custom {
+            position: relative;
+            border-radius: 20px;
+            left: 200px;
+        }
+
+        @media (max-width: 600px) {
+            .box-custom {
+                left: 0;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .box-custom {
+                left: 0;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .box-custom {
+                left: 100px;
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .frame-custom {
+                width: 200px;
+                height: 300px;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .frame-custom {
+                width: 400px;
+                height: 400px;
+            }
+        }
     </style>
 </head>
 
 <body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top py-3">
+
         <div class="container-fluid">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <ul class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="index.html">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link active" href="contact.html">Contact</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="menu.html">Menu</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="text-style-nav nav-link" href="gallery.html">Gallery</a>
                 </li>
+
                 <li class="nav-item dropdown">
-                    <a class="text-style-nav nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+
+                    <a class="text-style-nav nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">
+
                         About Us
+
                     </a>
+
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="#">Story</a></li>
-                        <li><a class="dropdown-item" href="#">Team</a></li>
+
+                        <li>
+                            <a class="dropdown-item" href="about.html#about-section">About</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="about.html#milestone-section">Story</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="about.html#team-section">Team</a>
+                        </li>
+
                     </ul>
+
                 </li>
+
             </ul>
+
         </div>
+
     </nav>
+
 
     <h1 class="page-title text-white">Hubungi Kami</h1>
 
-    <p>Alamat, jam operasional, nomor telepon/WA, tautan media sosial, dan form kontak
-        statis (Nama, Email, Pesan, tombol Kirim — tidak perlu berfungsi secara backend). Peta
-        lokasi (embed Google Maps) opsional.</p>
 
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quia dolorem, nam est impedit sit quidem
-        accusamus, ratione iure dolorum nostrum minus neque necessitatibus ipsam, a doloremque incidunt voluptas eos?
-    </p>
-    
+    <div class="container my-4 mb-2">
+
+        <video id="contactVideo" autoplay muted loop playsinline tabindex="-1"
+            oncontextmenu="return false;" class="d-block w-100 rounded-3">
+
+            <source src="../asset/contact-us.webm" type="video/webm">
+
+            Browser Anda tidak mendukung pemutaran video.
+
+        </video>
+
+    </div>
+
+
+    <section class="container my-5 text-light">
+
+        <div class="row g-4">
+
+            <div class="col-md-6 text-center mt-4 object-fit-cover">
+
+                <iframe class="frame-custom"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8766598173814!2d106.81257332033053!3d-6.260895470757747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1817f4047a5%3A0x368b600ec060471c!2sKafe%20Betawi%20Lippo%20Mall%20Kemang!5e0!3m2!1sid!2sid!4v1790326538040!5m2!1sid!2sid"
+                    style="border-radius: 15px; box-shadow: 0 0 12px cornsilk;"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+            </div>
+
+
+            <div class="col-md-6">
+
+                <h2 class="text-style mb-4">
+                    Info Kontak
+                </h2>
+
+                <p>
+                    <strong>
+                        Alamat:
+                    </strong><br>
+                    Jln. Sudirman Perumahan Boulevard, Jakarta Selatan, Jakarta
+                </p>
+
+                <p>
+                    <strong>Jam Operasional:</strong><br>
+                    Senin - Jumat: 08.00 - 22.00<br>
+                    Sabtu - Minggu: 09.00 - 23.00
+                </p>
+
+                <p>
+                    <strong>Telepon / WhatsApp:</strong><br>
+
+                    <a href="https://wa.me/6289534401889" class="text-light">
+                        +62 895-3440-1889
+                    </a>
+
+                </p>
+
+
+                <div class="d-flex gap-3 mt-3">
+
+                    <a href="#">
+                        <img src="../asset/Instagram-icon.png" width="30" height="30" alt="Instagram">
+                    </a>
+
+                    <a href="#">
+                        <img src="../asset/facebook-icon.webp" width="30" height="30" alt="Facebook">
+                    </a>
+
+                    <a href="#">
+                        <img src="../asset/logo-youtube.png" width="30" height="30" alt="YouTube">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container mt-5 row">
+
+            <div class="box-custom container col-md-6 mt-5">
+
+                <img style=" box-shadow: 0 0 12px cornsilk;
+                         border-radius: 20px;
+" src="../asset/contact-us.jpg" width="300" height="350" alt="Contact Us">
+
+            </div>
+
+
+            <div class="container col-md-6 mt-4">
+
+                <h2 class="text-style text-white mb-4" style="font-size: 1.2rem;">
+                    Kirim Pesan
+                </h2>
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label for="nama" class="text-white form-label">
+                            Nama
+                        </label>
+
+                        <input type="text" class="text-white form-control" id="nama"
+                            placeholder=" Input nama lengkap anda">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="email" class="text-white form-label">
+                            Email
+                        </label>
+
+                        <input type="email" class="form-control" id="email"
+                            placeholder="Example@gmail.com">
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label for="pesan" class="text-white form-label">
+                            Pesan
+                        </label>
+
+                        <textarea class="form-control" id="pesan" rows="4"
+                            placeholder="Tulis isi pesanan"></textarea>
+
+                    </div>
+
+
+                    <button type="button" class="text-white btn btn-dark">
+                        Kirim
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <footer class="bg-footer py-5">
+
         <div class="container">
 
             <div class="row">
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Perusahaan</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Tentang</a>
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Produk</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Blog</a>
+                    <h3 class="text-white">Perusahaan</h3>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Tentang
+                    </a>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Produk
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Blog
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Gabung</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Mitra</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Usaha</a>
+                    <h3 class="text-white">Gabung</h3>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Mitra
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Usaha
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Karir</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Pelajar</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Professional</a>
+                    <h3 class="text-white">Karir</h3>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Pelajar
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Professional
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Hubungi kami</h5>
 
-                    <a href="#" class="text-white d-block mb-3 text-decoration-none">Bantuan</a>
-                    <a href="#" class="text-white d-block text-decoration-none">Lokasi Kami</a>
+                    <h3 class="text-white">Hubungi kami</h3>
+
+                    <a href="#" class="text-white d-block mb-3 text-decoration-none">
+                        Bantuan
+                    </a>
+
+                    <a href="#" class="text-white d-block text-decoration-none">
+                        Lokasi Kami
+                    </a>
+
                 </div>
+
 
                 <div class="col-md-4 mb-4">
 
-                    <h5 class="text-white">Connect With Us</h5>
+                    <h3 class="text-white">
+                        Connect With Us
+                    </h3>
 
                     <div class="d-flex gap-3 mt-4">
 
                         <a class="content-footer" href="https://wa.me/6289534401889">
-                            <img src="../asset/whatsapp-icon.webp" width="25" height="25">
+
+                            <img src="../asset/whatsapp-icon.webp"
+                                width="25" height="25" alt="WhatsApp">
+
                         </a>
 
-                        <a class="content-footer" href="#">
-                            <img src="../asset/facebook-icon.webp" width="25" height="25">
-                        </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/Instagram-icon.png" width="25" height="25">
+
+                            <img src="../asset/facebook-icon.webp"
+                                width="25" height="25" alt="Facebook">
+
                         </a>
 
+
                         <a class="content-footer" href="#">
-                            <img src="../asset/logo-youtube.png" width="30" height="30">
+
+                            <img src="../asset/Instagram-icon.png"
+                                width="25" height="25" alt="Instagram">
+
+                        </a>
+
+
+                        <a class="content-footer" href="#">
+
+                            <img src="../asset/logo-youtube.png"
+                                width="30" height="30" alt="YouTube">
+
                         </a>
 
                     </div>
@@ -210,15 +462,29 @@
             <div class="mt-4">
 
                 <p class="text-white mb-0">
+
                     © 1979 Kedai Kopi Nusantara | Kedai Kopi Nusantara adalah merek milik PT Kedai Kopi Nusantara Tbk.
                     Terdaftar pada Direktorat Jendral Kekayaan Intelektual
                     Republik Indonesia.
+
                 </p>
 
             </div>
 
         </div>
+
     </footer>
+
+
+    <script>
+        const contactVideo = document.getElementById("contactVideo");
+
+        contactVideo.disablePictureInPicture = true;
+        contactVideo.setAttribute(
+            "controlsList",
+            "nodownload noplaybackrate nofullscreen"
+        );
+    </script>
 
 </body>
 

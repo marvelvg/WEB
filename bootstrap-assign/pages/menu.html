@@ -62,6 +62,23 @@
             margin-bottom: 20px;
         }
 
+        .image-cover{
+            width: 416px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .box-style:hover{
+            background-color: aliceblue;
+            border-radius: 2px;
+            scale: 1.02;
+        }
+
+        .box-style h5,p:hover{
+          color: black;
+        }
+
+
     </style>
 
 </head>
@@ -97,54 +114,102 @@
                         About Us
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about.html">About</a></li>
-                        <li><a class="dropdown-item" href="#">Story</a></li>
-                        <li><a class="dropdown-item" href="#">Team</a></li>
+                        <li><a class="dropdown-item" href="about.html#about-section">About</a></li>
+                        <li><a class="dropdown-item" href="about.html#milestone-section">Story</a></li>
+                        <li><a class="dropdown-item" href="about.html#team-section">Team</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <h1 class="text-style text-white text-center
+       <h1 class="text-style text-white text-center
     "> Andalan Kami</h1>
 
-    <p>Daftar menu ditampilkan sebagai grid card Bootstrap: gambar, nama, deskripsi singkat,
-        harga. Tanpa filter/tab kategori interaktif (interaksi semacam itu membutuhkan
-        JavaScript, belum dipelajari pada tahap tugas ini) — cukup satu daftar menu yang
-        berurutan</p>
+    <div class="container my-5">
+        <div class="row g-4">
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos vel possimus laborum aliquid, sapiente
-        facilis eum eos ipsa quibusdam distinctio! Temporibus doloremque rerum hic iusto vel. Officiis, et autem.</p>
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top"
+                    src="../asset/kopisusu.jpg" alt="Kopi Susu Gula Aren">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Kopi Susu Gula Aren</h2>
+                        <p class="card-text">Perpaduan espresso, susu segar, dan gula aren asli yang manis legit.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 22.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-12 col-sm-6 col-lg-4">
+                <div class=" box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top"
+                    src="../asset/americano.jpg" alt="Americano">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Americano</h2>
+                        <p class="card-text">Espresso murni dicampur air panas, cocok buat penikmat kopi hitam.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 18.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-12 col-sm-6 col-lg-4">
+                <div class="box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top"
+                    src="../asset/kopi-cantik.jpg" alt="Cappuccino">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Cappuccino</h2> 
+                        <p class="card-text">Espresso dengan foam susu lembut, ditaburi bubuk kayu manis.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 25.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top"
+                    src="../asset/matcha-latte.jpg" alt="Matcha Latte">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Matcha Latte</h2>
+                        <p class="card-text">Bubuk matcha premium dipadukan susu creamy, seger dan gak eneg.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 24.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top" 
+                    src="../asset/croissant.jpg" alt="Croissant Coklat">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Croissant Coklat</h2>
+                        <p class="card-text">Croissant renyah berlapis dengan filling coklat lumer di dalamnya.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 17.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="box-style card h-100 bg-color text-white border-0">
+                    <img class="image-cover card-img-top"
+                    src="../asset/kentang-goreng.jpg" alt="Kentang Goreng">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title text-white">Kentang Goreng</h2>
+                        <p class="card-text">Kentang goreng renyah disajikan dengan saus sambal & mayo.</p>
+                        <p class="card-text mt-auto fw-bold">Rp 15.000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <footer class="bg-footer py-5">
         <div class="container">
 
             <div class="row">
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Perusahaan</h5>
+                    <h2 class="text-white">Perusahaan</h2>
 
                     <a href="#" class="text-white d-block mb-3 text-decoration-none">Tentang</a>
                     <a href="#" class="text-white d-block mb-3 text-decoration-none">Produk</a>
@@ -152,21 +217,21 @@
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Gabung</h5>
+                    <h2 class="text-white">Gabung</h2>
 
                     <a href="#" class="text-white d-block mb-3 text-decoration-none">Mitra</a>
                     <a href="#" class="text-white d-block text-decoration-none">Usaha</a>
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Karir</h5>
+                    <h2 class="text-white">Karir</h2>
 
                     <a href="#" class="text-white d-block mb-3 text-decoration-none">Pelajar</a>
                     <a href="#" class="text-white d-block text-decoration-none">Professional</a>
                 </div>
 
                 <div class="col-md-2 mb-4">
-                    <h5 class="text-white">Hubungi kami</h5>
+                    <h2 class="text-white">Hubungi kami</h2>
 
                     <a href="#" class="text-white d-block mb-3 text-decoration-none">Bantuan</a>
                     <a href="#" class="text-white d-block text-decoration-none">Lokasi Kami</a>
@@ -174,24 +239,24 @@
 
                 <div class="col-md-4 mb-4">
 
-                    <h5 class="text-white">Connect With Us</h5>
+                    <h2 class="text-white">Connect With Us</h2>
 
                     <div class="d-flex gap-3 mt-4">
 
                         <a class="content-footer" href="https://wa.me/6289534401889">
-                            <img src="../asset/whatsapp-icon.webp" width="25" height="25">
+                            <img src="../asset/whatsapp-icon.webp" width="25" height="25" alt="WhatsApp">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/facebook-icon.webp" width="25" height="25">
+                            <img src="../asset/facebook-icon.webp" width="25" height="25" alt="Facebook">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/Instagram-icon.png" width="25" height="25">
+                            <img src="../asset/Instagram-icon.png" width="25" height="25" alt="Instagram">
                         </a>
 
                         <a class="content-footer" href="#">
-                            <img src="../asset/logo-youtube.png" width="30" height="30">
+                            <img src="../asset/logo-youtube.png" width="30" height="30" alt="YouTube">
                         </a>
 
                     </div>
