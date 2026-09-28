@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ABSENSI SISWA</title>
+</head>
+<body>
+    <script>
+    senin = Number(window.prompt("Jumlah mahasiswa hari Senin = "));
+    selasa = Number(window.prompt("Jumlah mahasiswa hari Selasa = "));
+    rabu = Number(window.prompt("Jumlah mahasiswa hari Rabu = "));
+    kamis = Number(window.prompt("Jumlah mahasiswa hari Kamis = "));
+    jumat = Number(window.prompt("Jumlah mahasiswa hari Jumat = "));
+
+    document.write("Grafik Jumlah Kehadiran Mahasiswa");
+
+    document.write("Senin: ");
+    for (i = 1; i <= senin; i++) {
+        document.write("x");
+    }
+
+    document.write("<br>Selasa: ");
+    for (i = 1; i <= selasa; i++) {
+        document.write("x");
+    }
+
+    document.write("<br>Rabu: ");
+    for (i = 1; i <= rabu; i++) {
+        document.write("x");
+    }
+
+    document.write("<br>Kamis: ");
+    for (i = 1; i <= kamis; i++) {
+        document.write("x");
+    }
+
+    document.write("<br>Jumat: ");
+    for (i = 1; i <= jumat; i++) {
+        document.write("x");
+    }
+</script>
+</body>
+</html>

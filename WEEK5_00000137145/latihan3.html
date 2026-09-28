@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JAM MASUK</title>
+</head>
+<body>
+    <script>
+        JamMasuk = window.prompt("Jam Sekarang (0-24): ");
+
+        if(JamMasuk > 24 && JamMasuk < 0){
+            document.write("JAM TIDAK VALID");
+        }
+
+        else if (JamMasuk >= 6 && JamMasuk <= 10){
+            document.write("SELAMAT PAGI");
+        }
+        else if (JamMasuk >= 11 && JamMasuk <= 14){
+            document.write("SELAMAT SIANG");
+        }
+        else if (JamMasuk >= 15 && JamMasuk <= 17){
+            document.write("SELAMAT SORE");
+        }
+        else if (JamMasuk >= 18 && JamMasuk <= 22){
+            document.write("SELAMAT SORE");
+        }
+        else if (JamMasuk >= 23 && JamMasuk){
+            document.write("SELAMAT TIDUR");
+        }
+        else if (JamMasuk >= 0 && JamMasuk <= 5){
+            document.write("SELAMAT TIDUR");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL 2</title>
+</head>
+<body>
+    <script>
+        JumlahMhs = window.prompt("jumlah");
+        for(i=1; i<=JumlahMhs; i++){
+            console.log('test');
+            nama = window.prompt('Nama');
+            uts = window.prompt('UTS');
+            uas = window.prompt('UAS');
+            tugas = window.prompt('TUGAS');
+        
+            document.write(" <br>/<br>" + i + ". " + nama + "<br />");
+            document.write("Tugas : " + tugas);
+            document.write("<br /> UTS : " + uts);
+            document.write("<br /> UAS : " + uas);
+
+            nilai = (uts * 0.35 + uas * 0.35 + tugas * 0.3);
+            
+            if(nilai > 100 && nilai < 0 ){
+                document.write(" DATA INPUT TIDAK VALID")
+            }
+
+            if(nilai >= 80){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE A ");
+            }
+
+            else if(nilai >= 75){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE B+ ");
+            }
+
+            else if(nilai >= 70){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE B- ");
+            }
+
+            else if(nilai >= 60){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE C+ ");
+            }
+
+            else if(nilai >= 50){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE C- ");
+            }
+
+            else if(nilai >= 45){
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE D ");
+            }
+
+            else{
+                document.write("<br> Nilai akhir  : " + nilai + "<br> GRADE E ");
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

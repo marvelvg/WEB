@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Luas & Keliling </title>
+</head>
+<body>
+    <script>
+
+        
+        LuasKeliling = window.prompt(" Luas atau Keliling Persegi Panjang: ")
+        panjang = window.prompt("Panjang : ");
+
+    while (LuasKeliling !== "luas" && LuasKeliling !== "keliling") {
+        LuasKeliling = window.prompt("Mau menghitung luas atau keliling?");
+    }
+        lebar = window.prompt("Lebar : ");
+
+        Luas = (panjang * lebar);
+        Keliling = ((2 * panjang) + (2 * lebar));
+
+        if(LuasKeliling === "Luas"){
+            document.write("Luasnya adalah " + Luas);
+            
+        }
+
+        else if(LuasKeliling === "Kelilingnya"){
+            document.write("Kelilingnya adalah " + Keliling);
+
+        }
+
+        else{
+            document.write(" Data input tidak valid ");
+        }
+    </script>
+</body>
+</html>

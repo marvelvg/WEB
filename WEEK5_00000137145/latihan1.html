@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+            // nama = window.prompt("nama");
+            // nilai = window.prompt("nilai");
+            // if(nilai >= 60) {
+            //     alert("lulus")
+            // }
+
+            nama = window.prompt("nama");
+            nilai = window.prompt("nilai");
+            alert(cekNilai(nilai));
+
+            function cekNilai(nilai) {
+                if(nilai >= 60){
+                    return "Lulus";
+                }else{
+                    return "Gagal";
+                }
+            }
+    </script>
+</body>
+</html>
