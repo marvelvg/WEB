@@ -17,7 +17,7 @@ async function getWeather() {
         console.log("Masukkan nama kota terlebih dahulu.");
         return;
     }
-// EXTERNAL API UPDATED
+// EXTERNAL API UPDATEDd
     try {
         const geoURL = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json`;
         const geoResponse = await fetch(geoURL);
