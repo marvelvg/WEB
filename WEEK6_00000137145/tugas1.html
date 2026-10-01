@@ -14,29 +14,36 @@
 
 <script>
     function generateInputs() {
-        const jumlah = Number.parseInt(document.getElementById("anggota").value, 10);
+        const jumlah = Number.parseInt(document.getElementById("anggota").value);
         const container = document.getElementById("form-container");
 
         container.querySelectorAll(".nama-anggota").forEach(input => input.remove());
 
-        if (!Number.isInteger(jumlah) || jumlah < 1) {
+        if (jumlah < 1 || jumlah > 5) {
             return;
         }
 
-        for (let i = 1; i <= jumlah; i++) {
-            const input = document.createElement("input");
-            input.type = "text";
-            input.placeholder = "Nama Anggota " + i;
-            input.className = "form-control my-2 nama-anggota";
-            container.appendChild(input);
+        else {
+            const currentButton = document.getElementById("generate-btn");
+            currentButton.remove();
+            for (let i = 1; i <= jumlah; i++) {
+                const input = document.createElement("input");
+                input.setAttribute("type", "text");
+                input.setAttribute("placeholder", "Nama Anggota " + i);
+                input.setAttribute("class", "form-control my-2 nama-anggota");
+                container.appendChild(input);
+            }
+            const submitButton = document.createElement("button");
+            submitButton.setAttribute("type", "submit");
+            submitButton.setAttribute("class", "btn btn-outline-primary");
+            submitButton.innerHTML = "Submit";
+            container.appendChild(submitButton);
         }
-    const submitButton = document.createElement("button");
-    submitButton.type = "submit";
-    submitButton.className = "btn btn-outline-primary";
-    submitButton.innerHTML = "Submit";
-    container.appendChild(submitButton);
+
+
     }
 </script>
+
 <body>
     <h1 class="text-center"><strong> DOCUMENT OBJECT MODEL (DOM)</strong></h1>
     </br>
@@ -46,7 +53,7 @@
             <h2>Pendaftaran Kelompok</h2>
             <input type="text" placeholder="Nama Kelompok" class="form-control my-2">
             <input id="anggota" type="text" name="anggota" placeholder="Jumlah Anggota" class="form-control my-2">
-            <button class="btn btn-outline-primary" type="button" onclick="generateInputs()"> Generate</button>
+            <button id="generate-btn"  class="btn btn-outline-primary" type="button" onclick="generateInputs()"> Generate</button>
 
         </div>
 
