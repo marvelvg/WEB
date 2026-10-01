@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
+<script>
+    function generateInputs() {
+        const jumlah = Number.parseInt(document.getElementById("anggota").value, 10);
+        const container = document.getElementById("form-container");
+
+        container.querySelectorAll(".nama-anggota").forEach(input => input.remove());
+
+        if (!Number.isInteger(jumlah) || jumlah < 1) {
+            return;
+        }
+
+        for (let i = 1; i <= jumlah; i++) {
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = "Nama Anggota " + i;
+            input.className = "form-control my-2 nama-anggota";
+            container.appendChild(input);
+        }
+    const submitButton = document.createElement("button");
+    submitButton.type = "submit";
+    submitButton.className = "btn btn-outline-primary";
+    submitButton.innerHTML = "Submit";
+    container.appendChild(submitButton);
+    }
+</script>
+<body>
+    <h1 class="text-center"><strong> DOCUMENT OBJECT MODEL (DOM)</strong></h1>
+    </br>
+
+    <form>
+        <div id="form-container" class="container mx-4 my-2">
+            <h2>Pendaftaran Kelompok</h2>
+            <input type="text" placeholder="Nama Kelompok" class="form-control my-2">
+            <input id="anggota" type="text" name="anggota" placeholder="Jumlah Anggota" class="form-control my-2">
+            <button class="btn btn-outline-primary" type="button" onclick="generateInputs()"> Generate</button>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
