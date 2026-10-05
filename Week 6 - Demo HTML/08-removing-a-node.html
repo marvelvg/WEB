@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Removing a Node</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; color: #1D2D5A; padding: 0 20px; }
+  h1.pagetitle { color: #2E8B94; font-size: 22px; }
+  p.hint { color: #666; }
+  pre.code { background: #F5F7FA; border-radius: 8px; padding: 18px 20px; overflow-x: auto;
+    font-family: "Courier New", monospace; font-size: 15px; line-height: 1.5; color: #24292E; }
+
+  .mockup { border: 1px solid #d7dade; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+  .titlebar { background: #eef1f3; padding: 10px 14px; display: flex; align-items: center; gap: 10px;
+    border-bottom: 1px solid #d7dade; }
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; }
+  .dot.r { background: #ff5f57; } .dot.y { background: #ffbd2e; } .dot.g { background: #28c840; }
+  .pill { background: #fff; border: 1px solid #d7dade; border-radius: 15px; padding: 4px 12px; font-size: 13px; color: #5a5f66; }
+  .page { background: #fff; padding: 22px 24px; }
+  #name { font-size: 24px; font-weight: 800; color: #1D2D5A; margin: 0 0 4px; transition: color .2s; }
+  #name.highlight { color: #2E8B94; text-decoration: underline; }
+  .bio { color: #555; margin: 0 0 16px; font-size: 14px; }
+  .skills { list-style: none; display: flex; gap: 8px; padding: 0; margin: 0 0 18px; flex-wrap: wrap; }
+  .skills li { background: #EAF6F7; color: #1D2D5A; padding: 6px 14px; border-radius: 20px; font-size: 13px; }
+  #addBtn { background: #2E8B94; color: #fff; border: none; border-radius: 8px; padding: 10px 0;
+    font-size: 14px; width: 100%; }
+  #addBtn.clickable { cursor: pointer; }
+  #addBtn.clickable:hover { background: #256e75; }
+
+  .console { border: 1px solid #d7dade; border-radius: 12px; overflow: hidden; margin-top: 16px; }
+  .content { background: #fff; padding: 18px 20px; font-family: "Courier New", monospace; font-size: 16px;
+    line-height: 1.7; min-height: 24px; }
+  .line { white-space: pre-wrap; }
+  .prompt { color: #2E8B94; font-weight: bold; margin-right: 10px; }
+  .placeholder { color: #b7bec9; font-family: Arial, sans-serif; font-style: italic; font-size: 14px; }
+</style>
+</head>
+<body>
+  <h1 class="pagetitle">Removing a Node</h1>
+  <p class="hint">Kode berikut dijalankan otomatis saat halaman ini dibuka. Hasilnya tampil di bawah, dan juga tetap tercatat di Console asli browser (F12) untuk didemokan.</p>
+
+  <pre class="code">const items =
+  document.querySelectorAll("#skills li");
+
+items[0].remove(); // removes "HTML"</pre>
+
+  <div class="mockup">
+    <div class="titlebar">
+      <div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+      <div class="pill">profile.html</div>
+    </div>
+    <div class="page">
+      <h1 id="name" class="title">Yogi Ananta</h1>
+      <p class="bio">Frontend developer in training.</p>
+      <ul class="skills" id="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <button id="addBtn">Add Skill</button>
+    </div>
+  </div>
+
+
+  <script>
+
+    const items =
+      document.querySelectorAll("#skills li");
+
+    items[0].remove(); // removes "HTML"
+
+  </script>
+</body>
+</html>
