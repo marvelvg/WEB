@@ -22,17 +22,18 @@
     <div id="showVal"></div>
 
     <h1>Add Children</h1>
-    <button id="ortu"></button>
+    <button id="btnMelahirkan">Melahirkan</button>
     <div id="ortu"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
     </script>
 <script>
 
-    ("btnMelahirkan").click(function(){
-         $("#ortu").append("<div style='background: deeppink; margin:2px;'>anak</div>");
+    $("#btnMelahirkan").click(function(){
+        let a = "anak";
+         $("#ortu").append(`<div style='background: deeppink; margin:2px;'> ${a}</div>`);
     });
-    
+
     $("#btnClickEv").click(function(){
         $("#clickMsg").text("Button above me is clicked.");
     });
@@ -45,7 +46,7 @@
     });
 
     $('#btnGetVal').click(function(){
-        val = $("#inputVal").val();
+        let val = $("#inputVal").val();
         $("#showVal").text(val);
     });
 </script>

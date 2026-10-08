@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <H1>Chatty</H1>
+    <!-- CHAT BUBBLE -->
+    <p>Chat Bubble</p>
+    <div id="parent">
+
+    </div>
+
+    <hr style="margin-top: 300px;">
+    <div style="margin-top: 300px" class="container mt-5">
+        <div class="row g-5  text-center justify-content-center ">
+            <div class="col-md-5">
+                <div class="card p-5 g-3 my-3">
+                    <p>ME</p>
+                    <input class="my-2 w-3" type="text" placeholder="NAME"  id="name"/>
+                    <input class="my-2 w-3" type="text" placeholder="MESSAGE" id="inputVal1" />
+                    <button class="btn btn-primary" id="btnSend1">SEND</button>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="card p-5 g-3 my-3">
+                    <p>MUMI</p>
+                    <input class="my-2 w-3" type="text" placeholder="NAME" id="nama2"/>
+                    <input class="my-2 w-3" type="text" placeholder="MESSAGE" id="inputVal2" />
+                    <button class="btn btn-primary" id="btnSend2">SEND</button>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#btnSend1').click(function () {
+            let val = $("#inputVal1").val();
+            let nama = $("#name").val();
+            $('#parent').append(`
+                <div class="border border-warning p-3 rounded bg-primary text-white absolute w-100 mt-1">
+                    <div class="text-end">
+                        <strong>
+                           <p class="mx-2 my-0">${nama}</p>   
+                        </strong>
+                        <p class="mx-2 my-0">${val}</p>
+                    </div>
+                </div>
+            `)
+
+
+        });
+
+        $('#btnSend2').click(function () {
+            let val = $("#inputVal2").val();
+            let nama = $("#nama2").val();
+            $("#parent").append(`            
+            <div class="border border-primary p-3 rounded bg-secondary text-white absolute w-100 mt-1">
+                    <div>
+                        <strong>
+                           <p class="mx-2 my-0">${nama}</p>
+                        </strong>
+                        <p class="mx-2 my-0">${val}</p>
+                    </div>
+            </div>
+            `);
+
+        });
+    </script>
+</body>
+
+</html>
